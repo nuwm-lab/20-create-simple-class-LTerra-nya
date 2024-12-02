@@ -53,8 +53,12 @@ namespace ConsoleApplication1
 
             // Викликаємо метод для виводу площі.
             test.GiveArea();
-
+            test.SetCoordinates(int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()));
+            test.SetRadius(double.Parse(Console.ReadLine()));
+            Console.WriteLine(test.coordinates2d[0] + " " + test.coordinates2d[1]);
+            Console.WriteLine(test.radius);
             // Чекати на нажаття будь-якої клавіші.
+
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }
